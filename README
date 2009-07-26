@@ -33,5 +33,16 @@ but then the game remains stand-alone.
 It will also have a web-based interface so people can upload their scripts
 and those scripts will run in the virtual world.
 
+TODO
+1) bot based on a single dot that can move 
+2) board that limits the bot
+3) way to display the movement of the bot (Gd of Perl 5 ?)
+4) allow writing "scripts" in the language of the bots
+
+
+
+
+
+
 
 

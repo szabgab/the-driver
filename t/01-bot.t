@@ -4,7 +4,7 @@ BEGIN {	@*INC.unshift('lib'); }
 # assume PERL6LIB to point to RAKUDO_DIR 
 use Test;
 
-plan 11;
+plan 21;
 
 use Bot;
 
@@ -28,3 +28,17 @@ is($anna.direction, 90, 'direction of Anna');
 
 
 eval_dies_ok('Bot.new(direction => "abc")', 'direction is a number');
+
+ok($bot.go(20), 'can go 20');
+is($bot.x, 0, 'x is 0') or diag($bot.x);
+is($bot.y, 20, 'y is 20') or diag($bot.y);
+
+ok($bot.right(100), 'can turn right 100');
+is($bot.direction, 100, 'turned right 100');
+ok($bot.left(10), 'can turn left 10');
+is($bot.direction, 90, 'correctly in 90');
+
+ok($bot.go(20), 'can go 20');
+is($bot.x, 20, 'x is 20') or diag($bot.x);
+is($bot.y, 20, 'y is 20') or diag($bot.y);
+
