@@ -1,0 +1,6 @@
+#!perl6
+use v6;
+BEGIN { @*INC.unshift('lib'); }
+use Driver;
+
+Driver.new.run(@*ARGS);

@@ -1,0 +1,25 @@
+
+Driver is inspired by LOGO and robotics games.
+
+There are simple turtles and more complex robots users 
+can program to do things in all kinds of mazes.
+
+
+The most simple framework will probably be similar
+to a basic version of the turtle of LOGO.
+
+We need to implement a simple language to drive that turtle.
+
+GO 100;    # in pixels
+LEFT 23;   # in degree
+RIGHT 17;  # in degree
+
+In more advanced versions the bots will have sensors (visual, touch etc)
+that can work at various distances.
+Users can implement triggers on various events of the sensors.
+The bots will also have several wheels and each wheel will get its 
+own instructions.
+
+We will provide a place where the bots can move around.
+The most basic is a plain field (a screen) where one can draw.
+
