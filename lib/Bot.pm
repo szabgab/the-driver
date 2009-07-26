@@ -13,8 +13,13 @@ class Bot {
 	method left(Int $degrees) {
 		self.turn(-$degrees);
 	}
+
+# make this method private?
 	method turn(Int $degrees) {
 		$!direction += $degrees;
+		$!direction += 360 if $.direction < 0;
+		$!direction -= 360 if $.direction > 360;
+		return 1;
 	}
 
 	
@@ -22,6 +27,7 @@ class Bot {
 		# trigonometry!
 		$!x += int(sin(2 * pi * $.direction / 360) * $distance);
 		$!y += int(cos(2 * pi * $.direction / 360) * $distance);
+		return 1;
 	}
 }
 
