@@ -1,5 +1,5 @@
 
-Driver is inspired by LOGO and robotics games.
+The Driver was inspired by LOGO and robotics games.
 
 There are simple turtles and more complex robots users 
 can program to do things in all kinds of mazes.
@@ -22,4 +22,16 @@ own instructions.
 
 We will provide a place where the bots can move around.
 The most basic is a plain field (a screen) where one can draw.
+More advanced fields will contain all kinds of objects that need
+to be collected or avoided. In even more advanced versions the players can
+each load their own bots on the same field and play against each other
+or with each other.
+
+The platform can be local - GUI based (e.g. Padre can be a front-end for this)
+but then the game remains stand-alone.
+
+It will also have a web-based interface so people can upload their scripts
+and those scripts will run in the virtual world.
+
+
 
