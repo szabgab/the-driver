@@ -4,11 +4,12 @@ BEGIN {	@*INC.unshift('lib'); }
 # assume PERL6LIB to point to RAKUDO_DIR 
 use Test;
 
-plan 32;
+plan 33;
 
 use Bot;
 
 my $bot = Bot.new(name => 'Foo Bar');
+
 
 isa_ok($bot, 'Bot');
 
@@ -55,4 +56,6 @@ ok($bot.go(100), 'went 100');
 is($bot.x, 20, 'x is now 20');
 is($bot.y, 20+70+70, 'y is now 160');
 
+eval_dies_ok('Bot.new.turn', 'private method');
 
+#diag %*INC.perl;

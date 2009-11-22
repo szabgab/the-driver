@@ -29,5 +29,6 @@ class Bot {
 		$!y += int(cos(2 * pi * $.direction / 360) * $distance);
 		return 1;
 	}
+
 }
 
